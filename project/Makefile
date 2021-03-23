@@ -1,0 +1,17 @@
+CC      = gcc
+RM      = rm -f
+CFLAGS  += -g
+CFLAGS += -Wall
+CFLAGS += -I./includes
+NAME = project
+SOURCES = sources/main.c\
+	sources/hello.c
+OBJECTS = $(SOURCES:.c=.o)
+all: $(NAME)
+$(NAME): $(OBJECTS)
+	gcc -o bin/$@ $(OBJECTS) # PB
+clean :
+	$(RM) $(OBJECTS)
+fclean : clean
+	$(RM) bin/$(NAME)
+.PHONY: all clean fclean.re
