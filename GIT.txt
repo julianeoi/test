@@ -1,0 +1,27 @@
+----------------------------
+installation sur ubuntu
+$ sudo apt install git-all
+---------------------------
+login : julianeoi@hotmail.com
+pwd :Clementine%2020
+---------------------------
+Recuperer un depot :
+git clone https://github.com/julianeoi/test.git
+----------------------------
+Ajouter tous les fichiers pour le commit
+git add -A
+----------------------------
+Passer de la base à GITHUB
+commit 
+
+echo "# test" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/julianeoi/test.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin https://github.com/julianeoi/test.git
+git branch -M main
+git push -u origin main
